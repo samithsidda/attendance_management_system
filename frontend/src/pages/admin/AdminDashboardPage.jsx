@@ -83,6 +83,10 @@ const AdminDashboardPage = () => {
             <span style={{ display: 'block', fontSize: '1.5rem', marginBottom: '0.5rem' }}>👨‍🎓</span>
             Manage Students
           </Link>
+          <Link to="/faculty" className="btn form-control" style={{ textDecoration: 'none', textAlign: 'center', padding: '1rem', background: 'rgba(255,255,255,0.05)' }}>
+            <span style={{ display: 'block', fontSize: '1.5rem', marginBottom: '0.5rem' }}>👨‍🏫</span>
+            Manage Faculty
+          </Link>
           <Link to="/subjects" className="btn form-control" style={{ textDecoration: 'none', textAlign: 'center', padding: '1rem', background: 'rgba(255,255,255,0.05)' }}>
             <span style={{ display: 'block', fontSize: '1.5rem', marginBottom: '0.5rem' }}>📚</span>
             Manage Subjects

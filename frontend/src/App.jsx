@@ -16,6 +16,7 @@ import ManageAdminsPage from './pages/admin/ManageAdminsPage';
 // Shared / Faculty Pages
 import DashboardPage from './pages/DashboardPage';
 import StudentsPage from './pages/StudentsPage';
+import FacultyPage from './pages/FacultyPage';
 import SubjectsPage from './pages/SubjectsPage';
 
 // Attendance Flow
@@ -43,6 +44,7 @@ function App() {
         {/* Protected Shared (Admin & Faculty) Routes */}
         <Route path="/dashboard" element={<ProtectedRoute allowedRoles={['admin', 'faculty', 'student']}><DashboardPage /></ProtectedRoute>} />
         <Route path="/students" element={<ProtectedRoute allowedRoles={['admin', 'faculty']}><StudentsPage /></ProtectedRoute>} />
+        <Route path="/faculty" element={<ProtectedRoute allowedRoles={['admin']}><FacultyPage /></ProtectedRoute>} />
         <Route path="/subjects" element={<ProtectedRoute allowedRoles={['admin', 'faculty']}><SubjectsPage /></ProtectedRoute>} />
         <Route path="/attendance/mark" element={<ProtectedRoute allowedRoles={['admin', 'faculty']}><MarkAttendancePage /></ProtectedRoute>} />
         <Route path="/defaulters" element={<ProtectedRoute allowedRoles={['admin', 'faculty']}><DefaultersPage /></ProtectedRoute>} />

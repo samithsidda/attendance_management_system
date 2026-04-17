@@ -12,6 +12,7 @@ const Sidebar = () => {
   const navItems = [
     { name: 'Dashboard', path: user?.role === 'admin' ? '/admin/dashboard' : '/dashboard', icon: <FiHome />, roles: ['admin', 'faculty', 'student'] },
     { name: 'Students', path: '/students', icon: <FiUsers />, roles: ['admin', 'faculty'] },
+    { name: 'Faculty', path: '/faculty', icon: <FiUsers />, roles: ['admin'] },
     { name: 'Subjects', path: '/subjects', icon: <FiBook />, roles: ['admin', 'faculty'] },
     { name: 'Mark Attendance', path: '/attendance/mark', icon: <FiCheckCircle />, roles: ['admin', 'faculty'] },
     { name: 'History', path: '/attendance/history', icon: <FiClock />, roles: ['admin', 'faculty', 'student'] },
